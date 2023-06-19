@@ -1,0 +1,543 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Rajdhani;
+    src: url(./assets/fonts/Rajdhani/Rajdhani-Medium.ttf);
+}
+@font-face{
+    font-family: SpaceGrotesk;
+    src: url(./assets/fonts/SpaceGrotesk-VariableFont_wght.ttf);
+    }
+
+:root{
+  --yellow-color: #FFFF00 ;
+  --yellow-light: #f8f184;
+  --blue-color: #42718bab;
+  --white-color: #fff;
+  --gradient-white: #eddebf67;
+  --gradient-red: #89000978;
+  --black-color: #000000fb;
+  --grey-color:#C4C4C4;
+  --green-color:#B11313;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: SpaceGrotesk;
+    padding: 15px;
+    font-size: 22px;
+}
+
+body {
+    background-image: url(assets/images/illustrations/Bathome1.png);
+    background-repeat: no-repeat;
+    background-position: cover;
+
+}
+
+.up-bar{
+    position: absolute;
+    border: 3px solid #BCBBBD;
+    border-bottom: none;
+    left: 102px;
+    right: 102px;
+    top: 132px;
+    height: 7400px;
+    z-index: -1;
+    opacity: 0.1;
+
+}
+
+.left-bar{
+    position: absolute;
+    border: 3px solid #BCBBBD;
+    border-bottom: none;
+    border-top: none;
+    left: 102px;
+    right: 102px;
+    top: 0;
+    height: 132px;
+    opacity: 0.2;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 50px 0 10px 150px;
+    top: -8px;
+       
+}
+ 
+.nav-bar a{
+    color: var(--white-color);
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Rajdhani;
+    src: url(./assets/fonts/Rajdhani/Rajdhani-Medium.ttf);
+    padding-left:20px ;
+    
+
+}
+li{
+    list-style-type: none;
+}
+
+.nav-bar a:hover{
+    color: var(--yellow-color);
+}
+
+.logo:hover{
+    filter:invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%) ;
+}
+
+.scroll .logo-bat1:hover{
+    filter:invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%) ;
+
+}
+
+.scroll .logo-bat2:hover{
+    filter:invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%) ;
+
+}
+
+.scroll .social:hover{
+    filter:invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%) ;
+
+}
+
+
+.texte{
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    margin: 0 auto;
+    width: 60%;
+    padding-top: 150px;
+}
+
+.scroll{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 50px;
+    top: 300px;
+}
+
+.scroll .social{
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+#hero .titre{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+    padding: 15px;
+    width: 60%;
+}
+
+ .flèche{
+    display: block;
+    margin: 0 auto;
+    padding-top: 250px;
+    
+}
+
+
+
+.container{
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+.content{
+    text-align: center;
+    padding-top: 150px;
+    -webkit-animation: fadeInRight 1500ms ease-in-out;
+    animation: fadeInRight 1500ms ease-in-out;
+}
+
+.btn{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 17px ;
+    letter-spacing: 1px;
+    font-family: SpaceGrotesk;
+    src: url(./assets/fonts/SpaceGrotesk-VariableFont_wght.ttf);
+    padding: 20px 60px ;
+    margin-top: 10px;
+    background: linear-gradient(
+        80deg, var(--gradient-white),var(--gradient-red)
+    ) ;
+    box-shadow: var(--black-color) 15px 15px 80px;
+
+}
+
+.btn:hover{
+    background: linear-gradient(80deg var(--gradient-red),var(--gradient-white));
+}
+
+.cta{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 250px;
+    padding-right: 250px;
+
+}
+
+.images{ 
+    display: flex;
+    justify-content: space-between;
+    border-color: rgb(54, 54, 97);
+    text-align: center;
+    font-size: 18px;
+    padding-right: 0;
+    }
+
+.Bathome:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 2px #fff;
+}    
+
+.sous-titres {
+        
+        padding-top: 10px;
+    }
+
+#batman-cinema, #némésis, #alliés, #multimedia{
+    margin-top: 40px;
+    padding-top: 60px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+#batman-cinema .titre, #némésis .titre, #alliés .titre, #justice-league .titre, #multimedia .titre{
+    text-transform: uppercase;
+    font-family: Rajdhani;
+    src: url(./assets/fonts/Rajdhani/Rajdhani-Medium.ttf);
+    font-size: 36px;
+    font-weight: bold;
+    margin: 30px auto;
+}
+
+#batman-cinema .description, #némésis .description, #alliés .description, #justice-league .description{
+
+    margin-bottom: 40px;
+    padding-bottom: 25px;
+    text-align: justify;
+    font-family: SpaceGrotesk;
+    width: 90%;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 26px;
+    
+}
+
+#némésis {
+    margin: 0 auto 200px auto;
+}
+
+
+#némésis .Bathome13{
+     position: relative;
+     left: 75px;
+     top: 75px;
+     
+}
+
+.Bathome12 {
+    position: absolute;
+    right: 0;
+    top: 2590px;
+    z-index: -1;
+
+}
+
+#justice-league .container{
+padding-left: 80px;
+padding-bottom: 30px;
+padding-top: 80px;
+}
+
+#multimedia .slider-multimedia{
+    display: flex;
+    width: 55%;
+    margin: 30px auto;
+}
+
+#multimedia .slider-image{
+    width: 100%;
+}
+
+#multimedia .slider-content{
+    padding: 20px;
+    background-color: #263135;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+h3{
+    font-size: 14px;
+    padding: 4px;
+}
+
+#multimedia p{
+    font-size: 12px;
+    font-family: SpaceGrotesk;
+    line-height: 15px;
+    padding: 4px;
+}
+
+#multimedia button{
+    position: relative;
+    top: 155px;
+    background: none;
+    border: none;
+}
+
+#multimedia button.right{
+    right: -90%;
+}
+
+#multimedia .color{
+    color: var(--yellow-color);
+}
+
+.bande-annonce{
+    padding-bottom: 150px;
+    padding-top: 90px;
+    background: #fff;
+    text-align: center;
+}
+
+#contact{
+    background-color: rgb(41, 51, 53);
+    padding: 70px 0;
+}
+
+#contact .form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#contact h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+#contact .titre{
+    display: block;
+    margin: 25px 0;
+}
+
+#contact .form input[type='email']{
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 95%;
+    border-bottom: 2px solid grey;
+    background-color: transparent;
+    padding: 10px 0;
+}
+
+#contact .icon {
+    transform: rotate(90deg);
+    width: 20px;
+    padding-left: 10px;
+}
+
+#contact .news{
+    margin: 15px 0;
+    border-bottom: 2px solid grey;
+
+}
+
+#contact .newsletter{
+    display: flex;
+    justify-content: space-between;
+}
+
+#invalid{
+    font-style: italic;
+}
+
+::placeholder{
+    color: var(--white-color);
+    font-size: 15px;
+}
+
+#select{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid white;
+
+}
+
+.btn-group{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form input[type='radio']{
+    opacity: 0;
+}
+
+.form input[type='text']{
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 100%;
+    border-bottom: 2px solid white;
+    padding: 10px 0;
+    background-color: transparent;
+}
+
+.form input[type='text1']{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    width: 150%;
+    padding: 10px 0;
+    background-color: transparent;
+}
+
+.btn-group label{
+    cursor: pointer;
+    padding: 10px 30px;
+    border: 2px solid rgb(56, 85, 95);
+    font-size: 10px;
+    font-weight: bold;
+}
+
+input[type='submit']{
+    display: block;
+    width: 230px;
+    margin: 25px auto;
+    padding: 18px 0;
+    cursor: pointer;
+    color: var(--white-color);
+    font-size: 16px;
+    background: linear-gradient(
+        80deg, var(--gradient-white),var(--gradient-red)
+    ) ;
+    border: none;
+}
+
+/*FOOTER*/
+
+#citation{
+    margin: 90px;
+}
+
+#citation .citation-carte{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#citation .citation-texte{
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#citation .citation-auteur{
+    padding-top: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 20px;    
+    font-family: SpaceGrotesk;
+    src: url(./assets/fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+
+#citation .guillemet-close{
+    float: right;
+}
+
+footer{
+    margin-top: 162px;
+}
+
+footer .texte-footer{
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+footer .social-footer{
+    text-align: center;
+    margin: 20px 0;
+}
+
+footer .social-item1{
+    padding: 5px;
+}
+
+footer .social-item{
+    padding: 15px;
+}
+
+.social-footer .social-item:hover{
+    filter:invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%) ;
+
+}@keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-1000px) scale(0.1);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.popupbox{
+    display: none;
+    background-color: rgb(109, 101, 101);
+    width: 50%;
+    text-align: center;
+    font-size:15px ;
+    margin: auto;
+    top: 300px;
+    left: 300px;
+    position: absolute;
+}
+.inside{
+  padding: 50px;
+  margin: 30px;
+  background-color: #263135;
+  border-radius: 10px;
+  box-shadow: 2px 2px 40px black;
+}
+
+.inside h1{
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+

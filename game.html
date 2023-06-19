@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batman-Game</title>
+    <link rel="stylesheet" href="game.css">
+    <script src="./scripts/cdnjs/jquery.min.js"></script>
+</head>
+<body>
+  <div class="up-bar"></div>
+  <div class="left-bar"></div>
+    
+    <header>
+        <div>
+          <nav class="container">
+            <a href="index.html">
+              <img class="logo" src="assets/images/logos/logohome.png" alt="logohome">
+            </a>
+            
+            <div class="nav-bar">
+                <a href="index.html">HOME</a>
+              
+                
+                  <a href="game.html">GAME</a>
+              </div>
+          </nav> 
+        </div> 
+      </header>
+  
+        <main>
+  
+          <div class="scroll">
+              
+                <img class="logo-bat1" src="assets/images/logos/logo_bat_flèche.png" alt="logo_bat_flèche" id="logo-haut" > 
+                <img class="social" src="assets/images/logos/icon_facebook.png" alt="icon_facebook">
+                <img class="social" src="assets/images/logos/icon_ig.png" alt="icon_ig">
+                <img class="social" src="assets/images/logos/icon_tw.png" alt="icon_tw">
+                <img class="logo-bat2" src="assets/images/logos/logo_bat_flèche_2.png" alt="logo_bat_flèche_2" id="logo-bat">
+          
+          
+          </div>
+          <section id="hero">
+            <div class="container" id="titre">
+              <h1>
+                let's play a 
+                <br> litle game...
+              <h1>
+            </div>
+            <img class="flèche" src="./assets/images/logos/flèche_down_header.png" alt="flèche_down_header">
+
+          </section>
+        
+            <!--homme mystere-->
+            <section class="section-quizz" id="section-quiz">
+                
+                  <div class="container" id="intro-quiz">
+                    <h2>Connaissez vous bien le chevalier noir?</h2>
+                    <img  class="batgame2" src="./assets/images/illustrations-game/Batgame_2.png" alt="Batgame_2">
+                     <div class="bouton">
+                    <button type="submit" class="btn-quiz" id="btn-start">Démarrer le quiz</button>
+                     </div>
+                  </div>
+                   
+                  
+                    <!--exmple sur le webinar-->
+                    <div class="quiz-box quiz" id="quiz-box">
+                    <h1> <span id="number-quiz">1</span>/<span id="total-quiz">15</span></h1>
+                    <!-------->
+
+                    <!----mon code-->
+                    <div class="quiz-container" id="quiz">
+                      <div class="quiz-header">
+                       <h2 id="question">Question Text</h2>
+                       <ul>
+                         <li>
+                           <input type="checkbox" name="answer" id="a" class="answer">
+                           <label for="a" id="a_text">Answer</label>
+                         </li>
+                         <li>
+                           <input type="checkbox" name="answer" id="b" class="answer">
+                           <label for="b" id="b_text">Answer</label>
+                         </li>
+                         <li>
+                           <input type="checkbox" name="answer" id="c" class="answer">
+                           <label for="c" id="c_text">Answer</label>
+                         </li>
+                       </ul>
+              
+                      </div>
+                      </div>
+                      <div class="btn-box" id="btn-next">
+                       <button id="submit">Question suivante</button>
+                      </div>
+                   <img class="photo" src="./assets/images/illustrations-game/Batgame_3.png" alt="Batgame_3" id="img-illustrate">
+                   
+                </div>
+
+
+                <div class="popup-result quiz" id="popup-result">
+                  <div class="box-resultat">
+                      <h1 id="titre"> Titre</h1>
+                      <p id="msg-result">Message reçu !</p>
+                      <a href="./game.html" class="btn-quiz">Recommencer le Quiz</a>
+                  </div>
+              </div>
+           </section>
+
+        </main>
+
+        <footer>
+          <div class="container">
+
+              <div class="texte-footer">
+                  <img src="assets/images/logos/icon_WB.png" alt="icon_WB">
+                  <span> Ce projet respecte l'univers l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves</span>
+              </div>
+
+              <div class="social-footer">
+                <a href="a">
+                  <img width="5%" class="social-item1" src="assets/images/logos/logo_sayna_white.png" alt="logo_sayna_white">
+                  <img class="social-item1" src="assets/images/logos/icon_x.png" alt="icon_x">
+                  <img width="5%" class="social-item1" src="assets/images/logos/icon_DC.png" alt="icon_DC">
+                </a>
+                <a class="social-item" href="">
+                   <img src="assets/images/logos/icon_facebook.png" alt="icon_facebook">
+                </a> 
+                <a class="social-item" href="">
+                   <img src="assets/images/logos/icon_ig.png" alt="icon_ig">
+                </a> 
+                <a class="social-item" href="">
+                    <img src="assets/images/logos/icon_tw.png" alt="icon_tw">
+                </a>
+              </div>
+
+          </div>
+        </footer>
+        <script src="game.js"></script>
+        <script src="./scripts/canvas.js"></script>
+      
+
+    
+</body>
+</html>

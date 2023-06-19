@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Rajdhani;
+    src: url(./assets/fonts/Rajdhani/Rajdhani-Medium.ttf);
+}
+@font-face{
+    font-family: SpaceGrotesk;
+    src: url(./assets/fonts/SpaceGrotesk-VariableFont_wght.ttf);
+    }
+
+:root{
+  --yellow-color: #FFFF00 ;
+  --yellow-light: #f8f184;
+  --blue-color: #42718bab;
+  --white-color: #fff;
+  --gradient-white: #eddebf67;
+  --gradient-red: #89000978;
+  --black-color: #000000fb;
+  --grey-color:#C4C4C4;
+  --green-color:#B11313;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: SpaceGrotesk;
+    padding: 15px;
+    font-size: 22px;
+    
+}
+
+
+.container{
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+
+.up-bar{
+    position: absolute;
+    border: 3px solid white;
+    border-bottom: none;
+    left: 102px;
+    right: 102px;
+    top: 132px;
+    height: 7400px;
+    z-index: -1;
+    opacity: 0.2;
+
+}
+
+.left-bar{
+    position: absolute;
+    border: 3px solid white;
+    border-bottom: none;
+    border-top: none;
+    left: 102px;
+    right: 102px;
+    top: 0;
+    height: 132px;
+    opacity: 0.2;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 50px 0 10px 150px;
+    top: -8px;
+       
+}
+.nav-bar a{
+    color: var(--white-color);
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Rajdhani;
+    src: url(./assets/fonts/Rajdhani/Rajdhani-Medium.ttf);
+    padding-left:20px ;
+    
+
+}
+
+.nav-bar a:hover{
+    color: var(--yellow-color);
+}
+
+.logo:hover{
+    filter:invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%) ;
+}
+
+.scroll .logo-bat1:hover{
+    filter:invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%) ;
+
+}
+
+.scroll .logo-bat2:hover{
+    filter:invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%) ;
+
+}
+
+.scroll .social:hover{
+    filter:invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%) ;
+
+}
+
+.scroll{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 50px;
+    top: 300px;
+}
+
+.scroll .social{
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+ #titre{
+    text-transform: uppercase;
+    font-size:50px;
+    padding-top:250px;
+    padding-left: 50px;
+    letter-spacing: 3px;
+    font-family: Rajdhani;
+    src: url(./assets/fonts/Rajdhani/Rajdhani-Medium.ttf);
+    font-weight: bold;
+    -webkit-animation: fadeInRight 1500ms ease-in-out;
+    animation: fadeInRight 1500ms ease-in-out;
+ }
+
+ .flèche{
+    display: block;
+    margin: 0 auto;
+    padding-top: 250px;
+    
+}
+
+body{
+    background-image: url(./assets/images/illustrations-game/Batgame_1.png);
+    background-position:top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(130vh - 30px);
+    
+
+}
+
+h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: Rajdhani;
+    src: url(./assets/fonts/Rajdhani/Rajdhani-Medium.ttf);
+    font-weight: bold;
+    padding-top: 220px;
+    text-align: center;
+}
+
+.batgame2{
+    padding-left: 80px;
+    padding-top: 30px;
+}
+
+button{
+    background:linear-gradient(
+        143deg, rgb(121, 128, 118, 0.5),
+        rgba(228, 122, 1, 0.6) 80%
+    ) ;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 20px 80px;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: Rajdhani;
+    src: url(./assets/fonts/Rajdhani/Rajdhani-Medium.ttf);
+}
+
+.bouton{
+  display: flex;
+  justify-content: center;
+    margin-top: 70px;
+    cursor: pointer;
+}
+
+/*FOOTER*/
+
+#citation{
+    margin: 90px;
+}
+
+#citation .citation-carte{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#citation .citation-texte{
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#citation .citation-auteur{
+    padding-top: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 20px;    
+    font-family: SpaceGrotesk;
+    src: url(./assets/fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+
+#citation .guillemet-close{
+    float: right;
+}
+
+/* footer */
+
+footer{
+    margin-top: 162px;
+}
+
+footer .texte-footer{
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+footer .social-footer{
+    text-align: center;
+    margin: 20px 0;
+}
+
+footer .social-item1{
+    padding: 5px;
+}
+
+footer .social-item{
+    padding: 15px;
+}
+
+.social-footer .social-item:hover{
+    filter:invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%) ;
+
+}@keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-1000px) scale(0.1);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/*homme mystere*/
+
+#section-quiz h1{
+    text-align: center;
+    font-size: 36px;
+    font-family: Rajdhani;
+    src: url(./assets/fonts/Rajdhani/Rajdhani-Medium.ttf);
+    font-weight: bold;
+    overflow: hidden;
+    margin: 0;
+    
+
+}
+
+.quiz-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+ 
+.quiz-header{
+    padding: 5rem;
+    
+}
+
+#section-quiz h2{
+    padding-bottom: 20px;
+    font-size: 20px;
+    text-transform: none;
+    font-family: Rajdhani;
+    src: url(./assets/fonts/Rajdhani/Rajdhani-Medium.ttf);
+
+    
+ }
+
+ ul{
+    list-style-type:none ;
+    padding: 0;
+ }
+
+ ul li{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    border: 1px solid gray;
+    background-color: grey;
+    width: 360px;
+    height: 6vh;    
+    
+ }
+
+ ul li label{
+    cursor: pointer;
+    padding-left: 10px;
+    
+ }
+
+ .btn-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    cursor: pointer;
+ }
+ button:hover{
+    background-color: #fff;
+ }
+
+.photo{
+    position: relative;
+    left: 180px;
+    top: -400px;
+    z-index: -1;
+}
+
+/*popup-box*/
+.box-resultat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*responsive*/
+@media screen and (max-width: 1080px) {
+   body{
+    display: block;
+   }
+   main{
+    width: 100%;
+   }
+}
+
+
+
+
+
+
